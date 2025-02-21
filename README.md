@@ -1,6 +1,6 @@
 # Exercícios do curso de HTML5 e CSS3: módulo 1 de 5 do professor Gustavo Guanabara
 
-Exercícios criado durante o curso de HTML5 e CSS3: módulo 1 ao 5 do professor [Gustavo Guanabara](https://github.com/gustavoguanabara)
+Exercícios criado durante o curso de HTML5 e CSS3: módulo 1 ao 5 do professor [Gustavo Guanabara](https://github.com/gustavoguanabara).
 
 ## Módulos do curso:
 [Módulo 1](https://www.cursoemvideo.com/curso/html5-css3-modulo1/)
