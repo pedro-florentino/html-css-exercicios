@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Pseudo-elementos</title>
+    <style>
+        p::before {
+            content: "Início: ";
+            color: red;
+        }
+
+        p::after {
+            content: " Fim.";
+            color: blue;
+        }
+
+        p::first-line {
+            font-weight: bold;
+            color: green;
+        }
+
+        p::first-letter {
+            font-size: 200%;
+            color: purple;
+        }
+
+        p::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Este é um exemplo de parágrafo estilizado com pseudo-elementos.</p>
+</body>
+</html>
