@@ -9,9 +9,17 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -20,17 +28,26 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        tbody > tr:nth-child(odd) { /* 2n-1 */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {/* 2n */
+            background-color: lightgray;
         }
 
         td.num {
             text-align: right;
-        }
-
-        tfoot td.num {
-            color: black;
-            font-weight: bolder;
         }
     </style>
 </head>
@@ -39,6 +56,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
                 TBODY
@@ -47,10 +65,11 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -165,10 +184,28 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+
+    <h2>Texto para demonstrar que o cabeçalho da tabela some automaticamente</h2>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus veniam atque sed sit deserunt beatae, fugiat inventore rem. Harum amet deserunt sequi libero voluptates doloribus, earum numquam voluptatem quos alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut explicabo saepe sint recusandae ad sapiente, ipsum minima unde error accusamus molestiae nulla temporibus perferendis fugiat minus libero quis a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dicta perspiciatis aspernatur vitae doloremque aliquam, cum modi consectetur repellendus quae ut accusantium recusandae omnis necessitatibus optio ipsa delectus blanditiis architecto.</p>
 </body>
 </html>
